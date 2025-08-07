@@ -3,9 +3,6 @@ myenv/
 venv/
 __pycache__/
 
-# FAISS Indexes (will be generated on the server)
-faiss_index_insurance/
-faiss_index_law/
 
 # Secrets
 .env

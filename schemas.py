@@ -30,10 +30,14 @@ class SimplifiedLawResponse(BaseModel):
 
 
 class DynamicRequest(BaseModel):
-    """Defines the structure for a dynamic document processing request."""
-    documents: HttpUrl # Use HttpUrl for automatic URL validation
+  
+    documents: HttpUrl 
     questions: List[str]
 
 class DynamicResponse(BaseModel):
-    """Defines the structure for a dynamic document processing response."""
+
+    answers: List[str]
+
+class BatchAnswers(BaseModel):
+ 
     answers: List[str]
